@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+}
+
+.container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#yes-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#yes-btn:hover {
+    background-color: #218838;
+}
+
+#no-btn {
+    background-color: #dc3545;
+    color: white;
+    position: absolute;
+}
+
+#no-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.1);
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg img {
+    width: 300px;
+    height: 300px;
+}
+
+.msg button {
+    margin-top: 15px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 15px;
+}
+.msg button:hover{
+    background-color: #218838;
+}
+.hidden {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        height: auto;
+    }
+
+    .container button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .msg img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .msg button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
